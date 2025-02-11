@@ -167,6 +167,7 @@ end
 generateplots = ExtendableFEM.default_generateplots(Example230_NonlinearElasticity, "example230.png") #hide
 function runtests() #hide
     strain, plt = main() #hide
-    return @test maximum(strain) ≈ 0.17289633483008537 #hide
+    @test maximum(strain) ≈ 0.17289633483008537 #hide
+	return nothing
 end #hide
 end
